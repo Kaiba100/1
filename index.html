@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Find your next little escape. Explore thoughtfully picked places with Elsewhere.">
+<title>Elsewhere — Take the scenic route</title>
+<link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navigation"><a class="logo" href="#">elsewhere<span>↗</span></a><nav aria-label="Main navigation"><a href="#places">Explore places</a><a href="#philosophy">Our philosophy</a><a class="nav-button" href="#planner">Find your escape <span>↗</span></a></nav></header>
+<main>
+<section class="hero">
+<img class="hero-image" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2400&q=85" alt="Quiet alpine lake surrounded by mountains and forest">
+<div class="hero-shade"></div><div class="hero-content"><p class="eyebrow">LESS SCROLLING. MORE WANDERING.</p><h1>A little further.<br>A little freer.</h1><p>For the places that make you pause.<br>And the moments that stay with you.</p><a class="button light" href="#places">Find your elsewhere <span>↗</span></a></div><div class="hero-bottom"><span>GOOD PLACES. GREAT STORIES.</span><span>46°41′ N &nbsp; 12°02′ E &nbsp; · &nbsp; THE DOLOMITES, ITALY</span></div>
+</section>
+<section class="destinations section" id="places"><div class="section-heading"><div><p class="eyebrow green">YOUR NEXT CHAPTER</p><h2>Somewhere worth going.</h2></div><p>A change of scenery can change everything.<br>Start with a place that feels like you.</p></div>
+<div class="filter-bar"><div class="filters" role="group" aria-label="Filter destinations"><button class="active" data-filter="all" aria-pressed="true">All escapes</button><button data-filter="coast" aria-pressed="false">By the water</button><button data-filter="nature" aria-pressed="false">Into the wild</button><button data-filter="city" aria-pressed="false">Slow city days</button></div><span class="collection-label">THE SMALL, SPECIAL COLLECTION ↙</span></div>
+<div class="cards" id="cards"></div><p id="filter-status" class="sr-only" aria-live="polite"></p>
+</section>
+<section class="philosophy section" id="philosophy"><div class="sun" aria-hidden="true">✳</div><p class="eyebrow green">A DIFFERENT KIND OF GETAWAY</p><h2>You don't need to go far.<br>Just somewhere that <em>feels different.</em></h2><p>We believe in unhurried mornings, taking the long way, and finding<br class="desktop"> a favorite place you never knew you were looking for.</p><a href="#planner">Make a little room for adventure <span>↗</span></a></section>
+<section class="planner section" id="planner"><div><p class="eyebrow">LET'S GET YOU OUT THERE</p><h2>Your next escape<br>starts with a feeling.</h2><p>Pick your pace. We'll find your kind of place.</p></div><form id="trip-form"><label for="mood">What are you in the mood for?</label><select id="mood" name="mood"><option value="coast">Salt air & sunshine</option><option value="nature">Fresh air & open spaces</option><option value="city">Coffee & cobblestones</option></select><label for="duration">How much time do you have?</label><select id="duration" name="duration"><option>A long weekend</option><option>One lovely week</option><option>All the time in the world</option></select><button class="button light" type="submit">Find my escape <span>↗</span></button><p id="recommendation" aria-live="polite"></p></form></section>
+</main><footer><a class="logo" href="#">elsewhere<span>↗</span></a><p>A little less ordinary. A little more out there.</p><span>© <span id="year"></span> Elsewhere</span></footer>
+<dialog id="destination-dialog"><button class="close" aria-label="Close destination details">✕</button><div id="dialog-content"></div></dialog>
+<script src="app.js"></script>
+</body></html>
